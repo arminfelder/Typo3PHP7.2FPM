@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) zip\
     && apt clean
 
-VOLUME /var/www/html
+VOLUME /var/www/
 
 EXPOSE 9000
 

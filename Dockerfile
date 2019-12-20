@@ -47,6 +47,8 @@ RUN apt-get update && apt-get install -y \
         imagick \
     ;
 
+USER www-data
+
 VOLUME /var/www/
 
 EXPOSE 9000
